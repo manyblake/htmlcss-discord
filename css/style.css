@@ -168,9 +168,28 @@ footer {
 
 .footer__col-big {
     flex-basis: calc(100% / 3);
-    padding-left: ;
+    padding-left: 72px;
 }
 
 .footer__col-small {
     flex-basis: calc(100% / 6);
+}
+
+.set__language {
+    display: flex;
+    align-items: center;
+}
+
+.set__language img {
+    height: 16px;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+}
+
+.socials li a img {
+    width: 16px;
+    color: white;
 }
