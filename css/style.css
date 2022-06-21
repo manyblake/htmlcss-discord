@@ -27,6 +27,11 @@ ul, ol, menu {
     background-color: black;
 }
 
+.button--grey {
+    color: white;
+    background-color: #7289da;
+}
+
 .row-reverse {
     flex-direction: row-reverse;
 }
@@ -68,9 +73,9 @@ header {
 
 .hero {
     background-image: url(../img/jumbo.png);
-    height: 447px;
-    background-size: contain;
-    padding: 128px 290px;
+    height: 600px;
+    background-size: cover;
+    padding: 128px 560px;
 }
 
 .hero h2, .hero p {
@@ -85,6 +90,7 @@ header {
 
 .hero p {
     line-height: 30px;
+    font-weight: 400;
 }
 
 .hero a {
@@ -98,6 +104,10 @@ header {
     gap: 32px;
 }
 
+.card {
+    flex-basis: 100%;
+}
+
 .card__img {
     flex-basis: 60%;
 }
@@ -106,13 +116,51 @@ header {
     flex-basis: 40%;
 }
 
-.cards .card__description h2 {
+.card .card__description h2 {
     font-size: 32px;
     padding: 0 104px;
     line-height: 48px;
 }
 
-.cards .card__description p {
+.card .card__description p {
     line-height: 32px;
     padding: 16px 104px;
 }
+
+.card-big {
+    max-width: 100%;
+    text-align: center;
+}
+
+.card-big h2 {
+    font-size: 32px;
+    padding: 24px 0px;
+}
+
+.card-big p {
+    line-height: 32px;
+    padding: 0 196px;
+}
+
+.card-big img {
+    width: 1200px;
+}
+
+.pre-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pre-footer h3 {
+    padding: 72px ;
+    font-size: 24px;
+}
+
+.pre-footer .stars {
+    background-image: url(../img/stars.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+
