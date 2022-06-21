@@ -28,12 +28,9 @@ ul, ol, menu {
     background-color: #7289da;
 }
 
-.row-reverse {
+.row--reverse {
     flex-direction: row-reverse;
 }
-
-
-
 
 .container {
     max-width: 1200px;
@@ -51,6 +48,11 @@ header {
     align-items: center;
     padding: 32px 0;
 }
+
+.row--alignstart {
+    align-items: flex-start;
+}
+
 
 .header__links-list {
     gap: 32px;
@@ -163,8 +165,13 @@ header {
 
 footer {
     background-color: #23272a;
+    color: white;
+}
+
+footer h3, footer h4 {
     color: #697bbd;
 }
+
 
 .footer__col-big {
     flex-basis: calc(100% / 3);
@@ -189,7 +196,27 @@ footer {
     gap: 16px;
 }
 
+.set__language p {
+    margin: 16px 0;
+}
+
 .socials li a img {
     width: 16px;
     color: white;
+}
+
+.footer__col-small h4 {
+    padding: 0 0 8px 0;
+}
+
+.footer__col-small li a {
+    font-size: 12px;
+    padding: 8px 0;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.footer--divider {
+    border-top: 2px solid #697bbd;
 }
