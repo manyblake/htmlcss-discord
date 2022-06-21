@@ -13,10 +13,6 @@ ul, ol, menu {
 
 /* Modifier */
 
-.header--padding {
-    padding: 16px 8px;
-}
-
 .button--white {
     color: black;
     background-color: white;
@@ -57,7 +53,7 @@ header {
 }
 
 .header__links-list {
-    gap: 30px;
+    gap: 32px;
 }
 
 .header__links-list a {
@@ -89,7 +85,7 @@ header {
 }
 
 .hero p {
-    line-height: 30px;
+    line-height: 32px;
     font-weight: 400;
 }
 
@@ -139,7 +135,7 @@ header {
 
 .card-big p {
     line-height: 32px;
-    padding: 0 196px;
+    padding: 0 192px;
 }
 
 .card-big img {
@@ -150,17 +146,31 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 96px;
 }
 
 .pre-footer h3 {
-    padding: 72px ;
+    padding: 72px 72px 32px ;
     font-size: 24px;
 }
 
 .pre-footer .stars {
     background-image: url(../img/stars.svg);
-    background-position: top center;
+    background-size: contain;
+    background-position: 75% 25%;
     background-repeat: no-repeat;
 }
 
+footer {
+    background-color: #23272a;
+    color: #697bbd;
+}
 
+.footer__col-big {
+    flex-basis: calc(100% / 3);
+    padding-left: ;
+}
+
+.footer__col-small {
+    flex-basis: calc(100% / 6);
+}
