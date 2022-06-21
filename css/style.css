@@ -11,6 +11,28 @@ ul, ol, menu {
     list-style-type: none;
 }
 
+/* Modifier */
+
+.header--padding {
+    padding: 16px 8px;
+}
+
+.button--white {
+    color: black;
+    background-color: white;
+}
+
+.button--black {
+    color: white;
+    background-color: black;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+
+
 
 .container {
     max-width: 1200px;
@@ -19,17 +41,14 @@ ul, ol, menu {
 
 header {
     background-color: #255ee9;
+
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.header--padding {
-    padding: 16px 8px;
+    padding: 32px 0;
 }
 
 .header__links-list {
@@ -41,12 +60,59 @@ header {
     text-decoration: none;
 }
 
-.header__button a {
+.button {
     text-decoration: none;
-    color: black;
     padding: 8px;
     border-radius: 16px;
-    background-color: white;
 }
 
-.hero {background-image: url(../img/jumbo.png);}
+.hero {
+    background-image: url(../img/jumbo.png);
+    height: 447px;
+    background-size: contain;
+    padding: 128px 290px;
+}
+
+.hero h2, .hero p {
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 16px;
+    font-size: 40px;
+}
+
+.hero p {
+    line-height: 30px;
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+.hero__buttons {
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.card__img {
+    flex-basis: 60%;
+}
+
+.card__description {
+    flex-basis: 40%;
+}
+
+.cards .card__description h2 {
+    font-size: 32px;
+    padding: 0 104px;
+    line-height: 48px;
+}
+
+.cards .card__description p {
+    line-height: 32px;
+    padding: 16px 104px;
+}
