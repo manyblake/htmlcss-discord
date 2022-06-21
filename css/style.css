@@ -4,26 +4,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 ul, ol, menu {
     list-style-type: none;
 }
 
-.header__logo {
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.header__navbar {
+header {
+    background-color: #255ee9;
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header__button {
+.header--padding {
+    padding: 16px 8px;
+}
 
+.header__links-list {
+    gap: 30px;
+}
+
+.header__links-list a {
+    color: white;
+    text-decoration: none;
 }
 
 .header__button a {
     text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 16px;
+    background-color: white;
 }
+
+.hero {background-image: url(../img/jumbo.png);}
