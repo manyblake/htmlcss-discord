@@ -20,6 +20,7 @@ ul, ol, menu {
 
 .button--white:hover {
     color: #697bbd;
+    box-shadow: 0 8px 8px #222;
 }
 
 .button--black {
@@ -29,11 +30,16 @@ ul, ol, menu {
 
 .button--black:hover {
     background-color: #333;
+    box-shadow: 0 8px 8px #222;
 }
 
 .button--grey {
     color: white;
     background-color: #7289da;
+}
+
+.button--grey:hover {
+    box-shadow: 0 8px 8px #222;
 }
 
 .row--reverse {
@@ -47,7 +53,6 @@ ul, ol, menu {
 
 header {
     background-color: #255ee9;
-
 }
 
 .row {
@@ -78,7 +83,7 @@ header {
     text-decoration: none;
     padding: 8px;
     border-radius: 16px;
-    transition: background-color 0.3s linear, color 0.3s linear;
+    transition: background-color 0.3s linear, color 0.3s linear, box-shadow 0.3s linear;
 }
 
 .hero {
