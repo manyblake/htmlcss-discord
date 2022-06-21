@@ -1,0 +1,29 @@
+/* Reset rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, menu {
+    list-style-type: none;
+}
+
+.header__logo {
+
+}
+
+.header__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__button {
+
+}
+
+.header__button a {
+    text-decoration: none;
+}
