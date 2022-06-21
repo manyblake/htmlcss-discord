@@ -18,9 +18,17 @@ ul, ol, menu {
     background-color: white;
 }
 
+.button--white:hover {
+    color: #697bbd;
+}
+
 .button--black {
     color: white;
     background-color: black;
+}
+
+.button--black:hover {
+    background-color: #333;
 }
 
 .button--grey {
@@ -53,20 +61,24 @@ header {
     align-items: flex-start;
 }
 
-
 .header__links-list {
     gap: 32px;
 }
 
-.header__links-list a {
+.header__links-list li a {
     color: white;
     text-decoration: none;
+}
+
+.header__links-list li a:hover {
+    text-decoration: underline;
 }
 
 .button {
     text-decoration: none;
     padding: 8px;
     border-radius: 16px;
+    transition: background-color 0.3s linear, color 0.3s linear;
 }
 
 .hero {
@@ -219,4 +231,8 @@ footer h3, footer h4 {
 
 .footer--divider {
     border-top: 2px solid #697bbd;
+}
+
+.footer__col-small li a:hover {
+    text-decoration: underline;
 }
