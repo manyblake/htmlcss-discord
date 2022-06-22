@@ -20,7 +20,7 @@ ul, ol, menu {
 
 .button--white:hover {
     color: #697bbd;
-    box-shadow: 0 8px 8px #222;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Effetto preso direttamente dal sito di Discors */
 }
 
 .button--black {
@@ -30,7 +30,7 @@ ul, ol, menu {
 
 .button--black:hover {
     background-color: #333;
-    box-shadow: 0 8px 8px #222;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button--grey {
@@ -39,11 +39,24 @@ ul, ol, menu {
 }
 
 .button--grey:hover {
-    box-shadow: 0 8px 8px #222;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.wave--flipped {
+    transform: scale(1, -1);    /* Effetto "flip" per gli svg trovato online */
 }
 
 .row--reverse {
     flex-direction: row-reverse;
+}
+
+.background--grey {
+    background-color: #f6f6f6;
 }
 
 .container {
@@ -87,7 +100,7 @@ header {
 }
 
 .hero {
-    background-image: url(../img/jumbo.png);
+    background-image: url(../../img/jumbo.png);
     height: 600px;
     background-size: cover;
     padding: 128px 560px;
@@ -165,7 +178,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 96px;
+    padding-bottom: 96px;
 }
 
 .pre-footer h3 {
@@ -174,7 +187,7 @@ header {
 }
 
 .pre-footer .stars {
-    background-image: url(../img/stars.svg);
+    background-image: url(../../img/stars.svg);
     background-size: contain;
     background-position: 75% 25%;
     background-repeat: no-repeat;
